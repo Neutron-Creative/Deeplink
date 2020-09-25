@@ -1,0 +1,66 @@
+{
+  "name": "deep-link-it",
+  "version": "1.0.0",
+  "description": "A library for creating deep links from regular links.",
+  "scripts": {
+    "build": "tsc",
+    "version": "auto-changelog && git add CHANGELOG.md",
+    "test": "jest",
+    "test-debug": "jest --runInBand --detectOpenHandles"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neutron-Creative/deep-link-it.git"
+  },
+  "keywords": [
+    "deep",
+    "links",
+    "link",
+    "links",
+    "neutron",
+    "creative",
+    "neutron",
+    "creative",
+    "deep",
+    "seo",
+    "marketing",
+    "uiux",
+    "ui",
+    "ux"
+  ],
+  "author": "Neutron Creative Inc.",
+  "license": "LGPL-2.1-only",
+  "bugs": {
+    "url": "https://github.com/Neutron-Creative/deep-link-it/issues"
+  },
+  "homepage": "https://github.com/Neutron-Creative/deep-link-it#readme",
+  "dependencies": {
+    "ua-parser-js": "^0.7.22"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.13",
+    "@types/node": "^14.10.1",
+    "@types/ua-parser-js": "^0.7.33",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "auto-changelog": "^2.2.0",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.7.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^3.9.7"
+  }
+}
