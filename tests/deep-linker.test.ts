@@ -9,6 +9,7 @@ import {UAParser} from "ua-parser-js";
 let testData = [
     "https://twitter.com/NeutronCreative",
     "https://www.instagram.com/NeutronCreative",
+    "https://www.facebook.com/NeutronCreative",
 ]
 
 
@@ -23,7 +24,7 @@ test("invalid user agents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -66,7 +67,7 @@ test("test chrome useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -111,7 +112,7 @@ test("test firefox useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -141,7 +142,7 @@ test("test safari useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -178,7 +179,7 @@ test("test internet explorer useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -213,7 +214,7 @@ test("test edge useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -246,7 +247,7 @@ test("test opera useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -277,7 +278,7 @@ test("test vivaldi useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {
@@ -310,7 +311,7 @@ test("test yandex useragents", () => {
     for (let agent of agents) {
         for (let url of testData) {
             let deepLink = DeepLinker.parseDeepLink(url, agent);
-            let parser = new UAParser(url);
+            let parser = new UAParser(agent);
             let os = parser.getOS().name;
 
             switch (os) {

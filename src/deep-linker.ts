@@ -11,9 +11,8 @@ export class DeepLinker {
      * @param userAgent The user agent to be parsed
      */
     static parseDeepLink(url: string, userAgent: string): string {
-        let parser = new UAParser(userAgent);
-
         if (this.isMobile(userAgent)) {
+            let parser = new UAParser(userAgent);
             let os = parser.getOS().name;
 
             if (os) {
