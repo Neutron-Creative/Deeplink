@@ -43,9 +43,6 @@ A library to convert your links to deep links.
     - ...and more coming soon!
 - 100% free and open-source
 
-## Supported Deep Links
-
-
 ## Installation
 
 ##### npm
