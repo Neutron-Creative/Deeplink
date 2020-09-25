@@ -5,19 +5,19 @@ A library to convert your links to deep links.
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/license-LGPL v2.1-green?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/Release-v1.1.0-orange?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/license-LGPL v2.1-green?style=flat" />
+    <img src="https://img.shields.io/badge/Release-v1.0.0-orange?style=flat" />
 </p>
 
 <p align="center">
     <a href="https://twitter.com/neutroncreative">
-        <img src="https://img.shields.io/twitter/follow/neutroncreative?style=for-the-badge" />
+        <img src="https://img.shields.io/twitter/follow/neutroncreative?style=flat" />
     </a>
     <a href="https://www.instagram.com/neutroncreative/">
-        <img src="https://img.shields.io/badge/Instagram-Follow%20Us-blue?style=for-the-badge" />
+        <img src="https://img.shields.io/badge/Instagram-Follow%20Us-blue?style=flat" />
     </a>
     <a href="https://www.youtube.com/channel/UCRLlabj3ZUgpx-ArKKHF8TQ">
-        <img src="https://img.shields.io/badge/YouTube-Subscribe%20-red?style=for-the-badge" />
+        <img src="https://img.shields.io/badge/YouTube-Subscribe%20-red?style=flat" />
     </a>
 </p>
 
