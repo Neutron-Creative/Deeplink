@@ -2,7 +2,6 @@ import {UAParser} from "ua-parser-js";
 import {DeepLinkGenerator} from "./generator";
 
 export class DeepLinker {
-
     /**
      * Parses a url and returns a deep link if the user agent represents a mobile device.
      * If it doesn't, it returns the url as is.

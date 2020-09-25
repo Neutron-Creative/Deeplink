@@ -59,7 +59,7 @@ yarn add deep-link-it
 # install dependencies
 npm install
 
-# install typescript globally
+# (optional) install typescript globally
 npm install typescript -g
 
 # build the library (automatically copies important files and compiles typescript)

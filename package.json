@@ -1,6 +1,6 @@
 {
   "name": "deep-link-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library for creating deep links from regular links.",
   "scripts": {
     "build": "tsc",
