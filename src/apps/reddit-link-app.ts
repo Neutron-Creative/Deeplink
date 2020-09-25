@@ -1,8 +1,8 @@
 import {LinkApp} from "../link-app";
 
-export class TwitterLinkApp extends LinkApp {
+export class RedditLinkApp extends LinkApp {
     constructor(url?: string) {
-        super(url, "twitter.com", "twitter", "com.twitter.android");
+        super(url, "reddit.com", undefined, "com.reddit.frontpage");
     }
 
     getAndroidLink(): string {
@@ -10,6 +10,6 @@ export class TwitterLinkApp extends LinkApp {
     }
 
     getiOSLink(): string {
-        return `${this.protocolPrefix}://${this.pathname}`
+        return this.originalUrl;
     }
 }

@@ -1,7 +1,7 @@
-import {LinkApp} from "./link-app";
+import {LinkApp} from "../link-app";
 
 export class InstagramLinkApp extends LinkApp {
-    constructor(url: string) {
+    constructor(url?: string) {
         super(url, "instagram.com", "instagram", "com.instagram.android");
     }
 

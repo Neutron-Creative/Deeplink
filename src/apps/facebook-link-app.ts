@@ -1,7 +1,7 @@
-import {LinkApp} from "./link-app";
+import {LinkApp} from "../link-app";
 
 export class FacebookLinkApp extends LinkApp {
-    constructor(url: string) {
+    constructor(url?: string) {
         super(url, "facebook.com", "fb", "com.facebook.katana");
     }
 

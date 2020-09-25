@@ -39,7 +39,6 @@ A library to convert your links to deep links.
     - TikTok
     - SnapChat
     - YouTube
-    - Reddit
     - ...and more coming soon!
 - 100% free and open-source
 
@@ -55,9 +54,6 @@ npm i deep-link-it
 yarn add deep-link-it
 ```
 
-## Examples
-TBA
-
 ## Compiling
 ```sh
 # install dependencies
@@ -71,8 +67,77 @@ npm run build
 ```
 
 ## Documentation
+### Prerequisites
+Deep Link It uses user agents to determine a valid destination for a link.  
+You can grab this user agent any way you need to.  
+
+### Import
+```ts
+import {DeepLinker} from "deep-link-it";
+
+// or
+
+const DeepLinker  = require("deep-link-it");
+```
+
+### Creating Deep Links
+#### Parse a Deep Link
+```ts
+import {DeepLinker} from "deep-link-it";
+
+let userAgent = navigator.userAgent;
+let deepLink = DeepLinker.parseDeepLink(url, userAgent);
+
+console.log(deepLink);
+```
+
+#### Create an OS specific Deep Link (no user agent needed)
+```ts
+import {DeepLinker} from "deep-link-it";
+
+let deepLink = DeepLinker.convertToDeepLink(url, "Android");
+console.log(deepLink);
+
+deepLink = DeepLinker.convertToDeepLink(url, "iOS");
+console.log(deepLink);
+
+```
+
+#### Check if a user agent is mobile
+```ts
+import {DeepLinker} from "deep-link-it";
+
+let userAgent = navigator.userAgent;
+let isMobile = DeepLinker.isMobile(url, userAgent);
+console.log(isMobile)
+```
+
+### Deep Link Mapping with Link Apps
+Link Apps are how Deep Link It figures out how to convert a link into a deep link.  
+Deep Link It provides a number of mappings by default, but if you wish to add more, you may do so.
+
+#### Add a mapping
+```ts
+import {DeepLinkGenerator} from "deep-link-it";
+import {LinkApp} from "deep-link-it";
+
+class RedditLinkApp extends LinkApp {
+    constructor(url?: string) {
+        super(url, "reddit.com", undefined, "com.reddit.frontpage");
+    }
+
+    getAndroidLink(): string {
+        return `intent://${this.appUrl}/${this.pathname}#Intent;package=${this.appPackage};scheme=https;end`;
+    }
+
+    getiOSLink(): string {
+        return this.originalUrl;
+    }
+}
+
+DeepLinkGenerator.mappings.push(new RedditLinkApp());
+```
 
 ### Check These Out:
-[The Wiki 📝](https://github.com/Neutron-Creative/deep-link-it/wiki) for more information on this project!  
 [Our contribution guidelines 🚀](https://github.com/Neutron-Creative/deep-link-it/blob/master/.github/CONTRIBUTING.md) to see how you can contribute to this project!  
 [Our Discord 💬](https://discord.gg/BUbmgV4) if you just want to chat with us! 😃

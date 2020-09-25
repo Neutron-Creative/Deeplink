@@ -10,6 +10,12 @@ let testData = [
     "https://twitter.com/NeutronCreative",
     "https://www.instagram.com/NeutronCreative",
     "https://www.facebook.com/NeutronCreative",
+    "https://reddit.com/u/NeutronCreative",
+    "https://tiktok.com/NeutronCreative",
+    "https://snapchat.com/NeutronCreative",
+    "https://youtube.com/NeutronCreative",
+    "asdasdasda",
+    "asdasddas.com/asdasd",
 ]
 
 

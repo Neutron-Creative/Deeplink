@@ -1,8 +1,8 @@
 import {LinkApp} from "../link-app";
 
-export class TwitterLinkApp extends LinkApp {
+export class YoutubeLinkApp extends LinkApp {
     constructor(url?: string) {
-        super(url, "twitter.com", "twitter", "com.twitter.android");
+        super(url, "www.youtube.com", "vnd.youtube", "com.google.android.youtube");
     }
 
     getAndroidLink(): string {
