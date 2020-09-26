@@ -1,4 +1,4 @@
-import {LinkApp} from "../link-app";
+import {LinkApp} from "../index";
 
 export class SnapchatLinkApp extends LinkApp {
     constructor(url?: string) {

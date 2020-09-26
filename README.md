@@ -73,7 +73,7 @@ You can grab this user agent any way you need to.
 
 ### Import
 ```ts
-import {Index} from "nc-deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 // or
 
@@ -83,32 +83,32 @@ const Index  = require("nc-deeplink");
 ### Creating Deep Links
 #### Parse a Deep Link
 ```ts
-import {Index} from "nc-deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 let userAgent = navigator.userAgent;
-let deepLink = Index.parseDeepLink(url, userAgent);
+let deepLink = DeepLinker.parseDeepLink(url, userAgent);
 
 console.log(deepLink);
 ```
 
 #### Create an OS specific Deep Link (no user agent needed)
 ```ts
-import {Index} from "nc-deeplink";
+import {DeepLinker} from "nc-deeplink";
 
-let deepLink = Index.convertToDeepLink(url, "Android");
+let deepLink = DeepLinker.convertToDeepLink(url, "Android");
 console.log(deepLink);
 
-deepLink = Index.convertToDeepLink(url, "iOS");
+deepLink = DeepLinker.convertToDeepLink(url, "iOS");
 console.log(deepLink);
 
 ```
 
 #### Check if a user agent is mobile
 ```ts
-import {Index} from "nc-deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 let userAgent = navigator.userAgent;
-let isMobile = Index.isMobile(url, userAgent);
+let isMobile = DeepLinker.isMobile(url, userAgent);
 console.log(isMobile)
 ```
 

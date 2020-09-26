@@ -2,7 +2,7 @@
  * User Agents come from https://www.whatismybrowser.com/guides/the-latest-user-agent
  */
 
-import {DeepLinker} from "../src/deep-linker";
+import {DeepLinker} from "../src";
 import {DeepLinkGenerator} from "../src/generator";
 import {UAParser} from "ua-parser-js";
 
