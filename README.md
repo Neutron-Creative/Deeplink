@@ -46,12 +46,12 @@ A library to convert your links to deep links.
 
 ##### npm
 ```bash
-npm i deeplink
+npm i nc-deeplink
 ```
 
 ##### yarn
 ```bash
-yarn add deeplink
+yarn add nc-deeplink
 ```
 
 ## Compiling
@@ -73,17 +73,17 @@ You can grab this user agent any way you need to.
 
 ### Import
 ```ts
-import {DeepLinker} from "deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 // or
 
-const DeepLinker  = require("deeplink");
+const DeepLinker  = require("nc-deeplink");
 ```
 
 ### Creating Deep Links
 #### Parse a Deep Link
 ```ts
-import {DeepLinker} from "deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 let userAgent = navigator.userAgent;
 let deepLink = DeepLinker.parseDeepLink(url, userAgent);
@@ -93,7 +93,7 @@ console.log(deepLink);
 
 #### Create an OS specific Deep Link (no user agent needed)
 ```ts
-import {DeepLinker} from "deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 let deepLink = DeepLinker.convertToDeepLink(url, "Android");
 console.log(deepLink);
@@ -105,7 +105,7 @@ console.log(deepLink);
 
 #### Check if a user agent is mobile
 ```ts
-import {DeepLinker} from "deeplink";
+import {DeepLinker} from "nc-deeplink";
 
 let userAgent = navigator.userAgent;
 let isMobile = DeepLinker.isMobile(url, userAgent);
@@ -118,8 +118,8 @@ DeepLink provides a number of mappings by default, but if you wish to add more, 
 
 #### Add a mapping
 ```ts
-import {DeepLinkGenerator} from "deeplink";
-import {LinkApp} from "deeplink";
+import {DeepLinkGenerator} from "nc-deeplink";
+import {LinkApp} from "nc-deeplink";
 
 class RedditLinkApp extends LinkApp {
     constructor(url?: string) {
