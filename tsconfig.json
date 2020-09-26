@@ -3,8 +3,14 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "outDir": "dist",
+    "lib": [
+      "es2017",
+      "es7",
+      "es6",
+      "dom"
+    ],
     "declaration": true,
+    "outDir": "dist",
     "removeComments": false,
     "strict": true,
     "skipLibCheck": true,
@@ -18,8 +24,5 @@
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }

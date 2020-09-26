@@ -1,4 +1,4 @@
-import {LinkApp} from "../index";
+import {LinkApp} from "../link-app";
 
 export class TwitterLinkApp extends LinkApp {
     constructor(url?: string) {

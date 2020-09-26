@@ -2,9 +2,8 @@
  * User Agents come from https://www.whatismybrowser.com/guides/the-latest-user-agent
  */
 
-import {DeepLinker} from "../src";
-import {DeepLinkGenerator} from "../src/generator";
 import {UAParser} from "ua-parser-js";
+import {DeepLinker, DeepLinkGenerator} from "../src";
 
 let testData = [
     "https://twitter.com/NeutronCreative",

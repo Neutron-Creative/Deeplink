@@ -1,17 +1,19 @@
 {
   "name": "nc-deeplink",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library for creating deep links from regular links.",
   "scripts": {
-    "build": "tsc && rollup -c",
+    "build": "tsc",
     "version": "auto-changelog && git add CHANGELOG.md",
     "test": "jest",
     "test-debug": "jest --runInBand --detectOpenHandles",
+    "prepublishOnly": "npm test",
     "prepare": "npm run build"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/"
+    "dist/**/*"
   ],
   "auto-changelog": {
     "output": "CHANGELOG.md",
