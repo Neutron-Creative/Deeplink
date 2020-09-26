@@ -1,4 +1,4 @@
-# deep-link-it
+# deeplink
  
 <p align="center" style="font-style: italic;color:rgba(0,0,0,.65);font-size: 12px !important;">
 A library to convert your links to deep links.
@@ -46,12 +46,12 @@ A library to convert your links to deep links.
 
 ##### npm
 ```bash
-npm i deep-link-it
+npm i deeplink
 ```
 
 ##### yarn
 ```bash
-yarn add deep-link-it
+yarn add deeplink
 ```
 
 ## Compiling
@@ -68,22 +68,22 @@ npm run build
 
 ## Documentation
 ### Prerequisites
-Deep Link It uses user agents to determine a valid destination for a link.  
+DeepLink uses user agents to determine a valid destination for a link.  
 You can grab this user agent any way you need to.  
 
 ### Import
 ```ts
-import {DeepLinker} from "deep-link-it";
+import {DeepLinker} from "deeplink";
 
 // or
 
-const DeepLinker  = require("deep-link-it");
+const DeepLinker  = require("deeplink");
 ```
 
 ### Creating Deep Links
 #### Parse a Deep Link
 ```ts
-import {DeepLinker} from "deep-link-it";
+import {DeepLinker} from "deeplink";
 
 let userAgent = navigator.userAgent;
 let deepLink = DeepLinker.parseDeepLink(url, userAgent);
@@ -93,7 +93,7 @@ console.log(deepLink);
 
 #### Create an OS specific Deep Link (no user agent needed)
 ```ts
-import {DeepLinker} from "deep-link-it";
+import {DeepLinker} from "deeplink";
 
 let deepLink = DeepLinker.convertToDeepLink(url, "Android");
 console.log(deepLink);
@@ -105,7 +105,7 @@ console.log(deepLink);
 
 #### Check if a user agent is mobile
 ```ts
-import {DeepLinker} from "deep-link-it";
+import {DeepLinker} from "deeplink";
 
 let userAgent = navigator.userAgent;
 let isMobile = DeepLinker.isMobile(url, userAgent);
@@ -113,13 +113,13 @@ console.log(isMobile)
 ```
 
 ### Deep Link Mapping with Link Apps
-Link Apps are how Deep Link It figures out how to convert a link into a deep link.  
-Deep Link It provides a number of mappings by default, but if you wish to add more, you may do so.
+Link Apps are how DeepLink figures out how to convert a link into a deep link.  
+DeepLink provides a number of mappings by default, but if you wish to add more, you may do so.
 
 #### Add a mapping
 ```ts
-import {DeepLinkGenerator} from "deep-link-it";
-import {LinkApp} from "deep-link-it";
+import {DeepLinkGenerator} from "deeplink";
+import {LinkApp} from "deeplink";
 
 class RedditLinkApp extends LinkApp {
     constructor(url?: string) {
@@ -139,5 +139,5 @@ DeepLinkGenerator.mappings.push(new RedditLinkApp());
 ```
 
 ### Check These Out:
-[Our contribution guidelines 🚀](https://github.com/Neutron-Creative/deep-link-it/blob/master/.github/CONTRIBUTING.md) to see how you can contribute to this project!  
+[Our contribution guidelines 🚀](https://github.com/Neutron-Creative/deeplink/blob/master/.github/CONTRIBUTING.md) to see how you can contribute to this project!  
 [Our Discord 💬](https://discord.gg/BUbmgV4) if you just want to chat with us! 😃

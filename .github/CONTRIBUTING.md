@@ -4,7 +4,7 @@ Our code is open and free for anyone to use, forever. We love to have people sha
 
 There are many ways to contribute to our projects!
 
-- Testing open [issues](https://github.com/neutron-creative/deep-link-it/issues) or [pull requests](https://github.com/neutron-creative/deep-link-it/issues) and sharing your findings in a comment.
+- Testing open [issues](https://github.com/neutron-creative/deeplink/issues) or [pull requests](https://github.com/neutron-creative/deeplink/issues) and sharing your findings in a comment.
 - Testing beta versions and release candidates.
 - Submitting fixes, improvements, and enhancements.
 - To disclose a security issue to our team, please submit a report to us privately using our communications channel: contact@neutroncreative.com
@@ -39,7 +39,7 @@ All projects should have a well documented installation process.
 ## Feature Requests
 
 - Please check our roadmap before asking for a feature request.
-- You may submit feature requests on our [issues](https://github.com/neutron-creative/deep-link-it/issues) tracker.
+- You may submit feature requests on our [issues](https://github.com/neutron-creative/deeplink/issues) tracker.
 
 ## Pull Request Process
 

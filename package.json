@@ -1,6 +1,6 @@
 {
-  "name": "deep-link-it",
-  "version": "1.0.1",
+  "name": "deeplink",
+  "version": "1.0.0",
   "description": "A library for creating deep links from regular links.",
   "scripts": {
     "build": "tsc",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Neutron-Creative/deep-link-it.git"
+    "url": "git+https://github.com/Neutron-Creative/deeplink.git"
   },
   "keywords": [
     "deep",
@@ -40,9 +40,9 @@
   "author": "Neutron Creative Inc.",
   "license": "LGPL-2.1-only",
   "bugs": {
-    "url": "https://github.com/Neutron-Creative/deep-link-it/issues"
+    "url": "https://github.com/Neutron-Creative/deeplink/issues"
   },
-  "homepage": "https://github.com/Neutron-Creative/deep-link-it#readme",
+  "homepage": "https://github.com/Neutron-Creative/deeplink#readme",
   "dependencies": {
     "ua-parser-js": "^0.7.22"
   },
