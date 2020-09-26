@@ -6,7 +6,7 @@ A library to convert your links to deep links.
 
 <p align="center">
     <img src="https://img.shields.io/badge/license-LGPL v2.1-green?style=flat" />
-    <img src="https://img.shields.io/badge/Release-v1.0.0-orange?style=flat" />
+    <img src="https://img.shields.io/npm/v/nc-deeplink" />
 </p>
 
 <p align="center">
