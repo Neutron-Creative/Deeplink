@@ -138,6 +138,6 @@ class RedditLinkApp extends LinkApp {
 DeepLinkGenerator.mappings.push(new RedditLinkApp());
 ```
 
-### Check These Out:
+### Check These Out
 [Our contribution guidelines 🚀](https://github.com/Neutron-Creative/deeplink/blob/master/.github/CONTRIBUTING.md) to see how you can contribute to this project!  
 [Our Discord 💬](https://discord.gg/BUbmgV4) if you just want to chat with us! 😃
