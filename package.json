@@ -3,12 +3,13 @@
   "version": "1.0.6",
   "description": "A library for creating deep links from regular links.",
   "scripts": {
-    "build": "tsc && (copyfiles -f \"package.json\" lib/)",
+    "build": "tsc",
+    "copy": "(copyfiles -f \"prepublish/package.json\" \"./lib\")",
+    "build-and-copy": "npm run build && npm run copy",
     "version": "auto-changelog && git add CHANGELOG.md",
     "test": "jest",
     "test-debug": "jest --runInBand --detectOpenHandles",
-    "prepublishOnly": "npm test",
-    "prepare": "npm run build"
+    "prepare": "npm run build-and-copy"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
