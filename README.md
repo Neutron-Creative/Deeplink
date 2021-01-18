@@ -37,7 +37,7 @@
   <a href="#key-features">Key features</a> •
   <a href="#installation">Installation</a> •
   <a href="#pre-requisites">Pre-requisites</a> •
-  <a href="#creating-deep-links">Creating deep links</a>
+  <a href="#creating-deep-links">Creating deep links</a> •
   <a href="#related">Related</a>
 </p>
 <br>
